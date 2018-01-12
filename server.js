@@ -32,7 +32,7 @@ app.use(express.static("public"));
 
 // Routes
 // =============================================================
-require("./controllers/burgers_controller.js")(app);
+require("./controllers/burgers_controllers.js")(app);
 
 // Starting our Express app
 // =============================================================
