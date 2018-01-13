@@ -6,17 +6,24 @@
 // =============================================================
 
 var express = require("express");
+// import burger model for access to data
 var burger = require("../models/burger.js");
-var path = require("path");
+// express router within the app instance
+var router = express.Router();
 
 // Routes
 // =============================================================
-module.exports = function(app) {
 
   // GET route for getting all of the todos
-  app.get("/", function(req, res) {
-    // burger.selectAll(function(data) {
-      res.sendFile(path.join(__dirname, "../public/test.html"));
-    // });
+  router.get("/", function(req, res) {
+    burger.selectAll(function(data) {
+        var hbsObject = {
+            burgers: data
+        };
+        // console.log(hbsObject);
+        res.render("index", hbsObject);
+    });
   });
-}
+
+  // export to the server
+  module.exports = router;
