@@ -1,11 +1,17 @@
 $(document).ready(function() {
 
-    $("#change-devoured").on("submit", function(event) {
+    $(".change-devoured-form").on("submit", function(event) {
+
+      event.preventDefault();
+
       var id = $(this).data("id");
+      console.log("submit worked");
   
       var newBurgerState = {
           devoured: true
       }
+
+      // console.log("newBurgerState = " + newBurgerState);
 
       // Send the PUT request.
       $.ajax("/api/update/" + id, {
@@ -19,19 +25,18 @@ $(document).ready(function() {
         }
       );
     });
-  
-    $("#testButton").on("submit"), function(event) {
-        alert("test works");
-    }
 
-    $("#create-burger").on("click", function(event) {
+    $(".create-form").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
-      console.log("submit here");
+
+      // console.log("submit worked");
   
       var newBurger = {
-        burger_name: $("#burgerName").val().trim(),
+        burger_name: $("#burgerInput").val().trim(),
       };
+
+      // console.log(newBurger);
   
       // Send the POST request.
       $.ajax("/api/create", {
