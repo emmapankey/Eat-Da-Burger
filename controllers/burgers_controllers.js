@@ -25,5 +25,25 @@ var router = express.Router();
     });
   });
 
+  // POST route for creating a new burger
+  router.post("/api/create", function(req, res) {
+      burger.insertOne(["burger_name"], [req.body.burgerName], function(data) {
+          res.json({
+              id: data.insertId
+          });
+      });
+  });
+
+  // PUT route for updating a burger's status to devoured
+  router.put("/api/update/:id", function(req, res) {
+      var condition = "id = " + req.params.id;
+
+      burger.updateOne({
+          devoured: req.body.devoured
+      }, condition, function(data) {
+        res.redirect("./index");
+      });
+  });
+
   // export to the server
   module.exports = router;
