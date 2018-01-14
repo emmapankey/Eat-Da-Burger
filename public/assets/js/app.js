@@ -5,13 +5,10 @@ $(document).ready(function() {
       event.preventDefault();
 
       var id = $(this).data("id");
-      console.log("submit worked");
   
       var newBurgerState = {
           devoured: true
       }
-
-      // console.log("newBurgerState = " + newBurgerState);
 
       // Send the PUT request.
       $.ajax("/api/update/" + id, {
@@ -29,14 +26,10 @@ $(document).ready(function() {
     $(".create-form").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
-
-      // console.log("submit worked");
   
       var newBurger = {
         burger_name: $("#burgerInput").val().trim(),
       };
-
-      // console.log(newBurger);
   
       // Send the POST request.
       $.ajax("/api/create", {

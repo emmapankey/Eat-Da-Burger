@@ -27,7 +27,7 @@ var router = express.Router();
 
   // POST route for creating a new burger
   router.post("/api/create", function(req, res) {
-      burger.insertOne(["burger_name"], [req.body.burgerName], function(data) {
+      burger.insertOne(["burger_name"], [req.body.burger_name], function(data) {
           res.json({
               id: data.insertId
           });
