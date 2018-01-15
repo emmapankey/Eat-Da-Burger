@@ -44,5 +44,9 @@ $(document).ready(function() {
       );
     });
 
+    $("#devourSubmitButton").click(function(){
+      $(".burgerImg").effect( "bounce", {times:3}, 300 );
+   });
+
   });
   
