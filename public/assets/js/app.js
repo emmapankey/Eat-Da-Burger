@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-    alert("page loaded");
-    
     $("#devourSubmitButton").on("click", function(event) {
 
       // Make sure to preventDefault on a submit event.
