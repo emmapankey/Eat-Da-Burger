@@ -18,7 +18,7 @@ $(document).ready(function() {
       }).then(
         function (result) {
           // Reload the page to get the updated list
-          location.reload();
+          // location.reload();
         }
       );
     });
