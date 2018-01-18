@@ -19,6 +19,9 @@ var burger = {
     },
     // changing a burger status to devoured
     updateOne: function(objColVals, condition, cb) {
+        console.log("ob cols " + objColVals);
+        console.log("condition " + condition);
+
         orm.updateOne("burgers", objColVals, condition, function(response) {
             cb(response);
         });

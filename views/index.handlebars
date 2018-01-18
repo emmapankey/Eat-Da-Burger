@@ -14,9 +14,9 @@
                 {{#each burgers}} {{#unless this.devoured}}
                 <li class="list-group-item">
                     <h3 class="burgerNameHeader">{{this.burger_name}}</h3>
-                    <form class="change-devoured-form" data-id="{{id}}">
+                    <form class="change-devoured-form">
                         <input type="hidden" name="devoured" value="true">
-                        <button class="btn btn-default btn-lg" id="devourSubmitButton" value="submit">Devour It!</button>
+                        <button class="btn btn-default btn-lg" id="devourSubmitButton" value="submit" data-id="{{id}}">Devour It!</button>
                     </form>
                 </li>
                 {{/unless}} {{/each}}

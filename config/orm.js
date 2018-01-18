@@ -48,8 +48,6 @@ var orm = {
      // insert a burger into the table
      insertOne: function(table, cols, vals, callback){
         var queryString = 'INSERT INTO ' + table;
-        console.log(cols);
-        console.log(vals);
         queryString += ' (';
         queryString += cols.toString();
         queryString += ') ';
