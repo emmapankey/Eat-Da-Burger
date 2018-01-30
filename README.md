@@ -18,6 +18,7 @@ https://github.com/emmapankey/Eat-Da-Burger.git
 
 #### Node.js and npm
 Go to the Node.js site: https://nodejs.org/en. Click the download button, and run through the installation file.
+When you install node.js, npm is automatically installed.
 To check if you have Node.js installed, run this command in your terminal:
 ```
 node -v
