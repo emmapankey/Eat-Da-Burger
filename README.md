@@ -31,25 +31,10 @@ npm -v
 ### Installing Node Packages
 
 
-In the terminal execute the following commands:
+In the terminal execute the following command:
 
 ```
-npm install express
-```
-```
-npm install body-parser
-```
-```
-npm install path
-```
-```
-npm install express-handlebars
-```
-```
-npm install mysql
-```
-```
-npm install method-override
+npm install
 ```
 
 ## Run
