@@ -36,6 +36,7 @@ In the terminal execute the following command:
 ```
 npm install
 ```
+This will install all of the app's node module dependencies.
 
 ## Run
 
