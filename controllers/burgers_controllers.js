@@ -36,6 +36,7 @@ var router = express.Router();
   // PUT route for updating a burger's status to devoured
   router.put("/api/update/:id", function(req, res) {
       var condition = "id = " + req.params.id;
+      console.log(condition);
 
       burger.updateOne({
           devoured: req.body.devoured

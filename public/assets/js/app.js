@@ -27,7 +27,6 @@ $(document).ready(function() {
   
       event.preventDefault();
 
-  
       var newBurger = {
         burger_name: $("#burgerInput").val().trim(),
       };
@@ -37,12 +36,11 @@ $(document).ready(function() {
         type: "POST",
         data: newBurger
       }).then (function(result) {
-          console.log("created new burger");
+          // console.log("created new burger");
           // Reload the page to get the updated list
           location.reload();
         }).fail(function(err) {
-          console.log(err)
-          alert("this failed");
+          // console.log(err)
         });
 
       });
