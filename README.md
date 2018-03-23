@@ -1,6 +1,6 @@
 # Eat-Da-Burger
 
-This app can be found at https://frozen-coast-19393.herokuapp.com/
+This app can be found at https://eat-da-burger-784512.herokuapp.com/
 
 * User can choose from a selection of uneaten burgers by clicking a "Devour It" button. When a burger is selected to be eaten it is moved to the Devoured column.
 
@@ -18,6 +18,7 @@ https://github.com/emmapankey/Eat-Da-Burger.git
 
 #### Node.js and npm
 Go to the Node.js site: https://nodejs.org/en. Click the download button, and run through the installation file.
+When you install node.js, npm is automatically installed.
 To check if you have Node.js installed, run this command in your terminal:
 ```
 node -v
@@ -30,26 +31,12 @@ npm -v
 ### Installing Node Packages
 
 
-In the terminal execute the following commands:
+In the terminal execute the following command:
 
 ```
-npm install express
+npm install
 ```
-```
-npm install body-parser
-```
-```
-npm install path
-```
-```
-npm install express-handlebars
-```
-```
-npm install mysql
-```
-```
-npm install method-override
-```
+This will install all of the app's node module dependencies.
 
 ## Run
 
