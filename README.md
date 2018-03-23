@@ -1,4 +1,5 @@
-# Eat-Da-Burger
+
+<img src="./public/assets/img/burgerscreenshot.png" alt="burger-screenshot">
 
 This app can be found at https://eat-da-burger-784512.herokuapp.com/
 
